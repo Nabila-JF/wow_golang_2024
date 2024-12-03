@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "3ec7cb3a-bc9f-4c39-a6d3-83905e2ae797",
+		"name": "GoBlog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37848633"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Articles",
+					"item": [
+						{
+							"name": "localhost:8080/auth/articles",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"category_id\": \"b0f97ec2-d2ff-4883-9828-88b15c749083\",\r\n  \"title\": \"Introduction to Go\",\r\n  \"content\": \"Go is an open-source programming language...\",\r\n  \"author_id\": \"ddb7e8f2-b2a4-41b4-bc9c-770d0457aac3\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/articles",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"articles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/articles",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/auth/articles",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"articles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/articles/e9d28711-c814-40d1-b64a-6ee324272056",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"category_id\": \"b0f97ec2-d2ff-4883-9828-88b15c749083\",\r\n  \"title\": \"Updated Title\",\r\n  \"content\": \"Updated content here.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/articles/e9d28711-c814-40d1-b64a-6ee324272056",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"articles",
+										"e9d28711-c814-40d1-b64a-6ee324272056"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/articles/e9d28711-c814-40d1-b64a-6ee324272056",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"category_id\": \"b0f97ec2-d2ff-4883-9828-88b15c749083\",\r\n  \"title\": \"Updated Title\",\r\n  \"content\": \"Updated content here.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/articles/e9d28711-c814-40d1-b64a-6ee324272056",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"articles",
+										"e9d28711-c814-40d1-b64a-6ee324272056"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "localhost:8080/auth/categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Technology\",\r\n  \"description\": \"Category for technology articles\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/auth/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/categories/b0f97ec2-d2ff-4883-9828-88b15c749083",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Tech Updates\",\r\n  \"description\": \"Latest updates in technology\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/categories/b0f97ec2-d2ff-4883-9828-88b15c749083",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"categories",
+										"b0f97ec2-d2ff-4883-9828-88b15c749083"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/auth/categories/b0f97ec2-d2ff-4883-9828-88b15c749083",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Tech Updates\",\r\n  \"description\": \"Latest updates in technology\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/auth/categories/b0f97ec2-d2ff-4883-9828-88b15c749083",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"categories",
+										"b0f97ec2-d2ff-4883-9828-88b15c749083"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "localhost:8080/auth/profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6IlVTRVIiLCJleHAiOjE3MzMzMjIwODZ9.9uf3YOg0rpeG9oKsAmvhB4HMGW1ANz_bL_qmpY1b0wg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/auth/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"testuser\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"password_hash\": \"password123\",\r\n  \"display_name\": \"Test User\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"testuser\",\r\n  \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
