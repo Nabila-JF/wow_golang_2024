@@ -40,30 +40,32 @@ go mod tidy
 
 ## **Struktur Proyek**
 ```
-go-blog/
+GO-BLOG/
 │
 ├── config/
-│   └── database.go        # Koneksi ke database MySQL
+│   └── database.go         // Koneksi ke database
 │
 ├── controllers/
-│   ├── auth_controller.go # Controller untuk autentikasi pengguna
-│   ├── article_controller.go # Controller untuk artikel
-│   └── category_controller.go # Controller untuk kategori
+│   ├── article_controller.go // Controller untuk manajemen artikel
+│   ├── auth_controller.go    // Controller untuk autentikasi (register, login)
+│   ├── category_controller.go // Controller untuk manajemen kategori
+│   ├── user_controller.go    // Placeholder untuk fitur manajemen pengguna
 │
 ├── middleware/
-│   └── auth_middleware.go # Middleware untuk validasi JWT
+│   └── auth_middleware.go    // Middleware untuk validasi JWT dan role
 │
 ├── models/
-│   ├── user.go            # Model untuk User
-│   ├── category.go        # Model untuk Kategori
-│   └── article.go         # Model untuk Artikel
+│   ├── article.go           // Model untuk artikel
+│   ├── category.go          // Model untuk kategori
+│   └── user.go              // Model untuk pengguna
 │
 ├── routes/
-│   └── routes.go          # Register semua routing
+│   └── routes.go            // Definisi endpoint API
 │
-├── main.go                # Entry point aplikasi
-├── go.mod                 # File Go modules
-└── README.md              # Dokumentasi proyek
+├── go.mod                   // Modul dan dependensi Go
+├── go.sum                   // File checksum dependensi Go
+├── main.go                  // File utama untuk menjalankan aplikasi
+└── README.md                // Dokumentasi proyek
 ```
 
 ---
